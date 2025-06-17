@@ -1,8 +1,9 @@
 from flask import Flask
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
-from .config import Config
+from .config import Config 
 
+#initialize sqlalchemy and flask migrate
 db = SQLAlchemy()
 migrate = Migrate()
 
