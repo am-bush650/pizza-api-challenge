@@ -1,8 +1,8 @@
 from flask import Blueprint, request, jsonify
-from Server.app import db
-from Server.models.restaurant_pizza import RestaurantPizza #Import RestaurantPizza model
-from Server.models.pizza import Pizza #Import Pizza model (used in response)
-from Server.models.restaurant import Restaurant #Import Restaurant model (used in response)
+from ..extensions import db
+from ..models.restaurant_pizza import RestaurantPizza #Import RestaurantPizza model
+from ..models.pizza import Pizza #Import Pizza model (used in response)
+from ..models.restaurant import Restaurant #Import Restaurant model (used in response)
 
 
 restaurant_pizza_bp = Blueprint('restaurant_pizza', __name__, url_prefix='/restaurant_pizzas')
@@ -45,5 +45,3 @@ def create_restaurant_pizza():
         return jsonify({"errors": [str(e)]}), 400
 
         
-    
-

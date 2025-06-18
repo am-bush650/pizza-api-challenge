@@ -1,4 +1,4 @@
-from Server.app import db
+from ..extensions import db
 from sqlalchemy.orm import validates
 
 
@@ -24,6 +24,6 @@ class RestaurantPizza(db.Model):
     @validates('price')
     def validate_price(self, key, value):
         if not 1000 <= value < 2000:
-            # If price is not between 1 (inclusive) and 30 (exclusive), raise an error.
-            raise ValueError("Price must be between 1 and 30")
+            # If price is not between 1000 (inclusive) and 2000 (exclusive), raise an error.
+            raise ValueError("Price must be between 1000 and 1999")
         return value

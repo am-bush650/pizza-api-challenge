@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify
-from Server.models.pizza import Pizza # importing the pizza model
+from ..extensions import db
+from ..models.pizza import Pizza # importing the pizza model
 
 
 
