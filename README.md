@@ -25,6 +25,7 @@ pizza-api-challenge/
 │ │ └── restaurant_pizza_controller.py
 ├── migrations/
 ├── .env # Contains DATABASE_URL
+|── PIZZA API.postman_collection.json
 ├── Pipfile
 └── README.md
 
