@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request, abort
+from flask import Blueprint, jsonify
 from ..extensions import db
 from ..models.restaurant import Restaurant
 
