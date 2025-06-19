@@ -296,8 +296,9 @@ POST = Create RestaurantPizza - http://127.0.0.1:5000/restaurant_pizza
 - export save as...
 
 ```
-export FLASK_APP=app.py
+export FLASK_APP=Server/app.py
 export FLASK_ENV=development
+
 
 python -m Server.seed - to reset
 

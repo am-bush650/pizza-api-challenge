@@ -1,6 +1,5 @@
 from dotenv import load_dotenv
 load_dotenv
-
 from flask import Flask
 from .extensions import db, migrate
 from .config import Config
@@ -33,4 +32,3 @@ def create_app():
     return app
 
 app = create_app()
-
