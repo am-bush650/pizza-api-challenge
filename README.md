@@ -52,7 +52,7 @@ flask db upgrade
 
 ## Seeding the database
 
-python Server/seed.py
+python -m Server.seed
 
 This will recreate and populate the database with mock restaurants, pizzas and restaurant-pizza relationships using faker
 
@@ -300,7 +300,7 @@ POST = Create RestaurantPizza - http://127.0.0.1:5000/restaurant_pizza
 export FLASK_APP=Server/app.py
 export FLASK_ENV=development
 
-
+seeding the db
 python -m Server.seed - to reset
 
 ```
