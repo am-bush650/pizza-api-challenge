@@ -288,9 +288,13 @@ enforced rule - Deleting a Restaurant automatically deletes all associated Resta
 - add requests
 
 Get = Get all restaurants - http://127.0.0.1:5000/restaurants
+
 GET = Get single restaurants by id - http://127.0.0.1:5000/restaurants/1
+
 DELETE = Delete restaurants by Id - http://127.0.0.1:5000/restaurants/1
+
 GET = Get all pizzas - http://127.0.0.1:5000/pizzas
+
 POST = Create RestaurantPizza - http://127.0.0.1:5000/restaurant_pizza
 
 - save the collection
